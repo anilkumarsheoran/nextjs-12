@@ -6,6 +6,9 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className={styles.container}>
+    <Head>
+        <title>Home page</title>
+    </Head>
       <h1> Learning Next js</h1>
       <nav>
         <ul>
