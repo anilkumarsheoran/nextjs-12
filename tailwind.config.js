@@ -1,9 +1,5 @@
 // tailwind.config.js
 module.exports = {
-    purge: [
-      // Use *.tsx if using TypeScript
-      './pages/**/*.tsx',
-      './components/**/*.tsx'
-    ]
-    // ...
+    purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+    darkMode: "class", 
   }
