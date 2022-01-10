@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import HeroBanner from '../components/hero-banner'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <Head>
         <title>Home page</title>
     </Head>
+    <HeroBanner />
     <header className="bg-white shadow">
         {/* <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
