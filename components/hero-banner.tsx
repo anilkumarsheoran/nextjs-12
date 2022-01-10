@@ -38,7 +38,7 @@ export default function HeroBanner() {
         </main>
       </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:absolute z-20 lg:inset-y-0 lg:right-0 lg:w-1/2">
       <Image
                 src="/images/hero-banner.jpg"
                 // height={144}
