@@ -28,7 +28,7 @@ export default function Header() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#"
+                    href="/about"
                     className=" text-gray-800 dark:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About
