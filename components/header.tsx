@@ -49,7 +49,7 @@ export default function Header() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/contact"
                     className="text-gray-800 dark:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
@@ -221,7 +221,7 @@ export default function Header() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-gray-800 dark:text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
