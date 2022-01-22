@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer
@@ -7,7 +9,8 @@ export default function Footer() {
     >
       <div className="container pt-9">
         <div className="flex justify-center mb-9">
-          <a href="#!" className="mr-9 text-gray-800 dark:text-gray-100">
+          <Link href="#!">
+          <a  className="mr-9 text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -24,7 +27,9 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800 dark:text-gray-100">
+          </Link>
+          <Link href="#!" >
+          <a  className="mr-9 text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -41,7 +46,9 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800 dark:text-gray-100">
+          </Link>
+          <Link href="#!" >
+          <a  className="mr-9 text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -58,7 +65,9 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800 dark:text-gray-100">
+          </Link>
+          <Link href="#!" >
+          <a  className="mr-9 text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -75,7 +84,9 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800 dark:text-gray-100">
+          </Link>
+          <Link href="#!" >
+          <a  className="mr-9 text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -92,7 +103,9 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="text-gray-800 dark:text-gray-100">
+          </Link>
+          <Link href="#!" >
+          <a  className="text-gray-800 dark:text-gray-100">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -109,6 +122,7 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
+          </Link>
         </div>
       </div>
 
@@ -117,9 +131,9 @@ export default function Footer() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         © 2021 Copyright: 
-        <a className="text-gray-800 dark:text-gray-100" href="/">
+        <Link href="/"><a className="text-gray-800 dark:text-gray-100" >
         Anil Kumar Sheoran
-        </a>
+        </a></Link>
       </div>
     </footer>
   );

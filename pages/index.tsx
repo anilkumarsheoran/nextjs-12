@@ -4,7 +4,22 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import HeroBanner from '../components/hero-banner'
 
-export default function Home() {
+type navData = {
+  name: String,
+  title: String,
+}
+
+type dataType = {
+  name: String,
+  title: String,
+  nav: Array<navData>
+}
+
+type Props = {
+  data: dataType
+}
+
+export default function Home({data}: Props) {
   return (
     <div className={styles.container}>
     <Head>
@@ -25,4 +40,19 @@ export default function Home() {
     </main>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch(`/api/headerData`)
+  const data = await res.json()
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      data,
+    },
+  }
 }
