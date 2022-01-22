@@ -20,6 +20,7 @@ type Props = {
 }
 
 export default function Home({data}: Props) {
+  console.log('fdfff', data)
   return (
     <div className={styles.container}>
     <Head>
@@ -45,7 +46,7 @@ export default function Home({data}: Props) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const res = await fetch(`/api/headerData`)
+  const res = await fetch('http://localhost:3000/api/headerData')
   const data = await res.json()
 
   // By returning { props: { posts } }, the Blog component
